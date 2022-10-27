@@ -1,0 +1,265 @@
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 250px 350px 300px;
+    background-color: black;
+
+}
+.card-twitter{
+    margin: 20px auto;
+    width: 200px;
+    height: 180px;
+    padding: 0 20px 20px 20px;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #141d26;
+    border-radius: 10px;
+}
+.twitter-logo{
+    height: 15px;
+    padding: 5px;
+    object-fit: contain;
+}
+.card-twitter__perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-twitter__perfil--foto{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.card-twitter__perfil--boton{
+    width: 80px;
+    height: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+.card-twitter__nombre{
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    color: white;
+    
+}
+.card-twitter__arroba{
+    font-size: 1.1rem;
+    margin-top: 1px;
+    color: grey; 
+}
+.card-twitter__descripcion{
+    margin: 0px auto;
+    font-size: 1.1rem;
+    color: white;
+}
+.card-twitter__stats{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    color: grey;
+}
+.siguiendo-tw,.seguidores-tw{
+    color: white;
+    font-weight: bold;
+}
+.card-twitter__comunes--foto,.card-twitter__comunes--nombres{
+    position: relative;
+}
+.foto--1{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #141d26;
+    z-index: 3;
+    object-fit: cover;
+}
+.foto--2{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #141d26;
+    left: -15px;
+    z-index: 2;
+    object-fit: cover;
+}
+.foto--3{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #141d26;
+    left: -30px;
+    z-index: 1;
+    object-fit: cover;
+}
+.card-twitter__comunes--nombres{
+    width: 130px;
+    margin: 0px;
+    top: -30px;
+    left:  80px;
+    color: grey;
+}
+
+.card-instagram{
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: white;
+}
+.img-container{
+    display: grid;
+    place-items: center;
+    padding: 3px;
+    border-radius: 100%;
+    background: linear-gradient(36deg, rgb(255,201,0) 13%, rgb(255,0,95) 73%, rgb(255,9,237) 100%);
+}
+.instagram-logo{
+    height: 20px;
+    padding: 5px;
+    object-fit: contain;
+}
+.img-container__foto{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+.nombre{
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+.arroba{
+    margin: 1px auto 0px auto;
+    color: grey;
+    font-size: 1.1rem;
+}
+.descripcion{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.card-instagram__stats{
+    display: flex;
+    width: 160px;
+    font-size: 1.1rem;
+    justify-content: space-between;
+}
+.siguiendo-ig,.seguidores-ig{
+    font-weight: bold;
+}
+.boton-seguir{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(1, 111, 255);
+    color: white;
+    border-radius: 8px;
+    border: none;
+
+}
+.card-tiempo{
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #141d26;
+}
+.card-tiempo__hoy{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    color: white;
+    height: 220px;
+
+
+
+    border-radius: 10px;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.card-tiempo__hoy--ciudad{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px auto 0px;
+}
+.card-tiempo__hoy--dia{
+    margin: auto;
+}
+.card-tiempo__temperatura{
+    display: flex;
+    justify-content: space-around;
+}
+.temperatura__stats{
+    display: flex;
+    flex-direction: column;
+}
+.temperatura__clima{
+    width: 80px;
+    height: 80px;
+
+}
+.temperatura__grados{
+    font-size: 1.5rem;
+    margin: 10px auto 0;
+    color: rgba(255,255,255,0.7);
+}
+.temperatura__grados span{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+.temperatura__texto{
+    margin: 0 auto 0;
+    opacity: .8;
+}
+.card-tiempo__informacion{
+    display: flex;
+    justify-content: space-around;
+}
+.card-tiempo__informacion--c1, .card-tiempo__informacion--c2{
+    display: flex;
+    flex-direction: column;
+}
+.card-tiempo__informacion--img1, .card-tiempo__informacion--img2{
+    margin: 20px auto 0;
+    width: 20px;
+    height: 20px;
+}
+.card-tiempo__informacion--porcentaje, .card-tiempo__informacion--km{
+    margin: 5px auto 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card-tiempo__informacion--texto1, .card-tiempo__informacion--texto2{
+    margin: 2px auto 20px;
+    opacity: .8;
+}
+h1{
+    color: white;
+}
