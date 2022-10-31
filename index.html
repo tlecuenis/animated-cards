@@ -8,19 +8,25 @@
     <title>Tarjetas Animadas</title>
 </head>
 <body>
+    <p class="title">Hacer hover para más info 😜</p>
     <section class="main-container">
         <article class="card-twitter">
-            <img src="./Assets/Twitter-logo.svg.png" alt="" class="twitter-logo">
-            <div class="card-twitter__perfil">
-                <img src="./Assets/IMG_20221009_164439_571.jpg" alt="foto de perfil" class="card-twitter__perfil--foto">
-                <button class="card-twitter__perfil--boton">Follow</button>
+            <div class="front-twitter">
+                <img src="./Assets/Twitter-logo.svg.png" alt="" class="front-twitter-logo">
             </div>
-            <p class="card-twitter__nombre">Tomás Matías Lecuenis</p>
-            <p class="card-twitter__arroba">@tlecuenis</p>
-            <p class="card-twitter__descripcion">Estudiante de Sistemas, desarrollador web, estudiante de Platzi</p>
-            <div class="card-twitter__stats">
-                <p class="card-twitter__stats--siguiendo"><span class="siguiendo-tw">100k</span> Siguiendo</p>
-                <p class="card-twitter__stats--seguidores"><span class="seguidores-tw">1M</span> Seguidores</p>
+            <div class="back-twitter">
+                <img src="./Assets/Twitter-logo.svg.png" alt="" class="twitter-logo">
+                <div class="card-twitter__perfil">
+                    <img src="./Assets/IMG_20221009_164439_571.jpg" alt="foto de perfil" class="card-twitter__perfil--foto">
+                    <button class="card-twitter__perfil--boton">Follow</button>
+                </div>
+                <p class="card-twitter__nombre">Tomás Matías Lecuenis</p>
+                <p class="card-twitter__arroba">@tlecuenis</p>
+                <p class="card-twitter__descripcion">Estudiante de Sistemas, desarrollador web, estudiante de Platzi</p>
+                <div class="card-twitter__stats">
+                    <p class="card-twitter__stats--siguiendo"><span class="siguiendo-tw">100k</span> Siguiendo</p>
+                    <p class="card-twitter__stats--seguidores"><span class="seguidores-tw">1M</span> Seguidores</p>
+                </div>
             </div>
             <!-- <div class="card-twitter__comunes">
                 <img src="./Assets/IMG_20221009_164439_571.jpg" alt="seguidos en común" class="card-twitter__comunes--foto foto--1">
@@ -28,53 +34,59 @@
                 <img src="./Assets/IMG_20221009_164439_571.jpg" alt="seguidos en común" class="card-twitter__comunes--foto foto--3">
                 <p class="card-twitter__comunes--nombres">Elon Musk, Bill Gates y 99 personas que sigues también siguen a esta cuenta</p>
             </div> -->
-           
-
-
         </article>
         <article class="card-instagram">
-            <img src="./Assets/Instagram_logo_2016.svg" alt="" class="instagram-logo">
-            <div class="img-container">
-                <img src="./Assets/IMG_20221009_164439_571.jpg" alt="" class="img-container__foto">
+            <div class="front-instagram">
+                <img src="./Assets/Instagram_logo_2016.svg" alt="" class="front-instagram-logo">
             </div>
-            <p class="nombre">Tomás Matías Lecuenis</p>
-            <p class="arroba">@tomas_lecuenis</p>
-            <p class="descripcion">Estudiante de Sistemas, desarrollador web, estudiante de Platzi</p>
-            <div class="card-instagram__stats">
-                <p class="card-instagram__stats--siguiendo"><span class="siguiendo-ig">100k</span> Siguiendo</p>
-                <p class="card-instagram__stats--seguidores"><span class="seguidores-ig">1M</span> Seguidores</p>
+            <div class="back-instagram">
+                <img src="./Assets/Instagram_logo_2016.svg" alt="" class="instagram-logo">
+                <div class="img-container">
+                    <img src="./Assets/IMG_20221009_164439_571.jpg" alt="" class="img-container__foto">
+                </div>
+                <p class="nombre">Tomás Matías Lecuenis</p>
+                <p class="arroba">@tomas_lecuenis</p>
+                <p class="descripcion">Estudiante de Sistemas, desarrollador web, estudiante de Platzi</p>
+                <div class="card-instagram__stats">
+                    <p class="card-instagram__stats--siguiendo"><span class="siguiendo-ig">100k</span> Siguiendo</p>
+                    <p class="card-instagram__stats--seguidores"><span class="seguidores-ig">1M</span> Seguidores</p>
+                </div>
+                <button class="boton-seguir">Follow</button>
             </div>
-            <button class="boton-seguir">Follow</button>
+            
 
         </article>
         <article class="card-tiempo">
-            <div class="card-tiempo__hoy">
-                <p class="card-tiempo__hoy--ciudad">Buenos Aires</p>
-                <p class="card-tiempo__hoy--dia">Hoy</p>
-                <div class="card-tiempo__temperatura">
-                    <img src="./Assets/icons8-rain-cloud-96.png" alt="Clima" class="temperatura__clima">
-                    <div class="temperatura__stats">
-                        <p class="temperatura__grados"><span>20°</span>/17°</p>
-                        <p class="temperatura__texto">Parcialmente Nublado</p> 
+            <div class="front-tiempo">
+                <img src="./Assets/icons8-rain-cloud-96.png" alt="Clima" class="front-tiempo-logo">
+            </div>
+            <div class="back-tiempo">
+                <div class="card-tiempo__hoy">
+                    <p class="card-tiempo__hoy--ciudad">Buenos Aires</p>
+                    <p class="card-tiempo__hoy--dia">Hoy</p>
+                    <div class="card-tiempo__temperatura">
+                        <img src="./Assets/icons8-rain-cloud-96.png" alt="Clima" class="temperatura__clima">
+                        <div class="temperatura__stats">
+                            <p class="temperatura__grados"><span>20°</span>/17°</p>
+                            <p class="temperatura__texto">Parcialmente Nublado</p> 
+                        </div>
                     </div>
-                </div>
-                <div class="card-tiempo__informacion">
-                    <div class="card-tiempo__informacion--c1">
-                        <img src="./Assets/icons8-wet-50.png" alt="Humedad" class="card-tiempo__informacion--img1">
-                        <p class="card-tiempo__informacion--porcentaje">35%</p>
-                        <p class="card-tiempo__informacion--texto1">Humedad</p>
+                    <div class="card-tiempo__informacion">
+                        <div class="card-tiempo__informacion--c1">
+                            <img src="./Assets/icons8-wet-50.png" alt="Humedad" class="card-tiempo__informacion--img1">
+                            <p class="card-tiempo__informacion--porcentaje">35%</p>
+                            <p class="card-tiempo__informacion--texto1">Humedad</p>
+                        </div>
+                       <div class="card-tiempo__informacion--c2">
+                            <img src="./Assets/icons8-wind-50.png" alt="Viento" class="card-tiempo__informacion--img2">
+                            <p class="card-tiempo__informacion--km">15 km/h</p>
+                            <p class="card-tiempo__informacion--texto2">Viento</p>
+                       </div>
                     </div>
-                   <div class="card-tiempo__informacion--c2">
-                        <img src="./Assets/icons8-wind-50.png" alt="Viento" class="card-tiempo__informacion--img2">
-                        <p class="card-tiempo__informacion--km">15 km/h</p>
-                        <p class="card-tiempo__informacion--texto2">Viento</p>
-                   </div>
                 </div>
             </div>
+            
         </article>
-        <h1>
-            FALTA UNA ANIMACIÓN QUE AL HACER HOVER SE MUESTRE LO QUE ESTA HECHO, PERO MIENTRAS ESTE ESCONDIDO CON UN LOGO O LO QUE SEA
-        </h1>
     </section>
 </body>
 </html>

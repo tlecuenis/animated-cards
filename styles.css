@@ -7,26 +7,79 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-.main-container{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 250px 350px 300px;
     background-color: black;
 
 }
+.title{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+
+}
 .card-twitter{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.card-twitter>div{
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.front-twitter{
+    position: static;
+    margin: 20px auto;
+    width: 200px;
+    height: 100px;
+    /* grid-row: 1/2; */
+    display: grid;
+    place-items: center;
+
+    background-color: white;
+    border-radius: 10px;
+
+    transform: perspective(200px) rotateY(0deg);
+
+}
+.card-twitter:hover .front-twitter{
+    position: absolute;
+    transform: perspective(200px) rotateY(180deg);
+}
+.front-twitter-logo{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.back-twitter{
+    position: absolute;
     margin: 20px auto;
     width: 200px;
     height: 180px;
     padding: 0 20px 20px 20px;
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
     display: flex;
     flex-direction: column;
 
     background-color: #141d26;
     border-radius: 10px;
+
+    transform: perspective(200px) rotateY(180deg);
+    opacity: 0;
+
 }
+.card-twitter:hover .back-twitter{
+    position: static;
+    opacity: 1;
+    transform: perspective(200px) rotateY(360deg);
+}
+
 .twitter-logo{
     height: 15px;
     padding: 5px;
@@ -118,17 +171,55 @@ body{
 }
 
 .card-instagram{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.card-instagram>div{
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+}
+.front-instagram{
+    position: static;
+    width: 200px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    /* grid-row: 2/3; */
+
+    border-radius: 10px;
+    background-color: white;
+
+    transform: perspective(200px) rotateY(0deg);
+}
+.front-instagram-logo{
+    height: 50px;
+    width: 50px;
+}
+.card-instagram:hover .front-instagram{
+    position: absolute;
+    transform: perspective(200px) rotateY(180deg);
+}
+.back-instagram{
+    position: absolute;
     width: 200px;
     height: 300px;
-    margin: auto;
     padding: 0px 20px 20px 20px;
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
     border-radius: 10px;
     background-color: white;
+
+    transform: perspective(200px) rotateY(180deg);
+    opacity: 0;
+}
+.card-instagram:hover .back-instagram{
+    position: static;
+    opacity: 1;
+    transform: perspective(200px) rotateY(360deg);
 }
 .img-container{
     display: grid;
@@ -181,14 +272,54 @@ body{
 
 }
 .card-tiempo{
-    grid-row: 3/4;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+}
+.card-tiempo>div{
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+}
+.front-tiempo{
+    position: static;
+    /* grid-row: 3/4; */
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    
+    background-color: white;
+
+    transform: perspective(200px) rotateY(0deg);
+}
+.card-tiempo:hover .front-tiempo{
+    position: absolute;
+    transform: perspective(200px) rotateY(180deg);
+}
+.front-tiempo-logo{
+    height: 50px;
+    width: 50px;
+}
+.back-tiempo{
+    position: absolute;
+    /* grid-row: 3/4; */
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 250px;
     height: 230px;
     border-radius: 10px;
+    
     background-color: #141d26;
+
+    transform: perspective(200px) rotateY(180deg);
+    opacity: 0;
+}
+.card-tiempo:hover .back-tiempo{
+    position: static;
+    transform: perspective(200px) rotateY(360deg);
+    opacity: 1;
 }
 .card-tiempo__hoy{
     display: flex;
@@ -196,8 +327,6 @@ body{
     margin: 5px;
     color: white;
     height: 220px;
-
-
 
     border-radius: 10px;
     background: rgb(9,9,121);
@@ -259,7 +388,4 @@ body{
 .card-tiempo__informacion--texto1, .card-tiempo__informacion--texto2{
     margin: 2px auto 20px;
     opacity: .8;
-}
-h1{
-    color: white;
 }
