@@ -6,9 +6,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-    background-color: black;
-
+    margin: 0 auto;
+    max-width: 100rem;
+    min-width: 30rem;
+    background: rgb(255,115,91);
+    background: linear-gradient(90deg, rgba(255,115,91,1) 0%, rgba(23,176,185,1) 100%);
 }
 .title{
     font-size: 2rem;
@@ -19,7 +21,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
     grid-gap: 1rem;
-    place-items: center;
+    justify-content: center;
 
 }
 .card-twitter{
@@ -61,7 +63,7 @@ body{
     position: absolute;
     margin: 20px auto;
     width: 200px;
-    height: 180px;
+    height: 200px;
     padding: 0 20px 20px 20px;
     /* grid-row: 1/2; */
     display: flex;
@@ -105,19 +107,19 @@ body{
     border: none;
 }
 .card-twitter__nombre{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0px;
     color: white;
     
 }
 .card-twitter__arroba{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 1px;
     color: grey; 
 }
 .card-twitter__descripcion{
     margin: 0px auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
 }
 .card-twitter__stats{
@@ -183,6 +185,7 @@ body{
     position: static;
     width: 200px;
     height: 100px;
+    margin: 20px auto;
     display: grid;
     place-items: center;
     /* grid-row: 2/3; */
@@ -203,7 +206,8 @@ body{
 .back-instagram{
     position: absolute;
     width: 200px;
-    height: 300px;
+    height: 320px;
+    margin: 20px auto;
     padding: 0px 20px 20px 20px;
     /* grid-row: 2/3; */
     display: flex;
@@ -241,16 +245,16 @@ body{
     object-fit: cover;
 }
 .nombre{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0px;
 }
 .arroba{
     margin: 1px auto 0px auto;
     color: grey;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .descripcion{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 .card-instagram__stats{
@@ -311,7 +315,7 @@ body{
     height: 230px;
     border-radius: 10px;
     
-    background-color: #141d26;
+    background-color: white;
 
     transform: perspective(200px) rotateY(180deg);
     opacity: 0;
@@ -339,6 +343,7 @@ body{
 }
 .card-tiempo__hoy--dia{
     margin: auto;
+    font-size: 1.2rem;
 }
 .card-tiempo__temperatura{
     display: flex;
@@ -365,6 +370,7 @@ body{
 }
 .temperatura__texto{
     margin: 0 auto 0;
+    font-size: 1.2rem;
     opacity: .8;
 }
 .card-tiempo__informacion{
@@ -387,5 +393,6 @@ body{
 }
 .card-tiempo__informacion--texto1, .card-tiempo__informacion--texto2{
     margin: 2px auto 20px;
+    font-size: 1.2rem;
     opacity: .8;
 }
